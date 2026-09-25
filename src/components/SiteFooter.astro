@@ -1,0 +1,87 @@
+---
+interface Props {
+  id?: string;
+}
+
+const { id } = Astro.props;
+---
+
+<footer class="site-footer" id={id}>
+  <div>
+    <a class="footer-brand" href="/">Gustavo Bianchi</a>
+    <p>Pianist and educator.</p>
+  </div>
+
+  <div class="footer-links">
+    <a
+      href="https://www.youtube.com/@BianchiPianist"
+      target="_blank"
+      rel="noopener noreferrer"
+    >YouTube</a>
+    <a
+      href="https://www.instagram.com/bianchipianist/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Instagram</a>
+    <a href="mailto:bianchipianostudio@gmail.com">Email</a>
+  </div>
+
+  <p class="copyright">© {new Date().getFullYear()} Gustavo Bianchi</p>
+</footer>
+
+<style>
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 50px;
+    align-items: start;
+    padding: 64px clamp(24px, 7vw, 110px) 34px;
+    border-top: 1px solid var(--border);
+    background: var(--background);
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 1.65rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  p {
+    margin: 8px 0 0;
+    color: var(--cream-muted);
+    font-size: 0.85rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .footer-links a {
+    color: var(--cream-muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 180ms ease;
+  }
+
+  .footer-links a:hover,
+  .footer-links a:focus-visible {
+    color: var(--gold-light);
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  @media (max-width: 760px) {
+    .site-footer { grid-template-columns: 1fr; }
+    .copyright { grid-column: 1; }
+  }
+</style>

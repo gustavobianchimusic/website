@@ -1,0 +1,585 @@
+---
+import ExclusiveAudio from "./components/ExclusiveAudio.astro";
+import SiteFooter from "./components/SiteFooter.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional accompanist and collaborative piano services for instrumentalists, singers, students, schools, auditions, competitions, recitals, and UIL events."
+    />
+    <title>Collaborative Piano &amp; Accompaniment | Dr. Gustavo Bianchi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Gustavo Bianchi</a>
+
+      <nav aria-label="Main navigation">
+        <a href="/#about">About</a>
+        <a href="/#music">Music</a>
+        <a href="/studio">Studio</a>
+        <a href="/accompanist" aria-current="page">Accompanist</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <details class="mobile-navigation">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="/#about">About</a>
+          <a href="/#music">Music</a>
+          <a href="/studio">Studio</a>
+          <a href="/accompanist" aria-current="page">Accompanist</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
+    </header>
+
+    <main>
+      <section class="services-hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Collaborative Piano</p>
+
+          <h1>Collaborative Piano &amp; Accompaniment</h1>
+
+          <p class="hero-introduction">
+            I provide professional piano accompaniment for instrumentalists,
+            singers, students, teachers, schools, and music studios. Every
+            collaboration is prepared with careful attention to the music,
+            clear communication, and the goal of helping each performer feel
+            confident and fully supported.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="mailto:bianchipianostudio@gmail.com?subject=Accompaniment%20Inquiry"
+          >
+            Inquire About Accompaniment
+          </a>
+        </div>
+      </section>
+
+      <section class="section services-section">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+
+          <h2>Support for Rehearsals, Auditions, Competitions, and Performances</h2>
+
+          <p class="section-introduction">
+            Engagements are shaped around the performer, repertoire, schedule,
+            and event requirements.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Student Performances</h3>
+            <p>
+              UIL Solo &amp; Ensemble, scholarship competitions, school
+              performances, recitals, juries, and other adjudicated events.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Auditions</h3>
+            <p>
+              College, festival, ensemble, and program auditions requiring a
+              dependable and musically responsive pianist.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Instrumental &amp; Vocal Collaboration</h3>
+            <p>
+              Rehearsals, recitals, and recordings with singers, string
+              players, wind players, and other instrumentalists.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Schools &amp; Studios</h3>
+            <p>
+              Collaborative piano support for school programs, private
+              studios, multiple students, and contracted performance events.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section experience-section">
+        <div class="experience-panel">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Extensive Experience Supporting Student and Professional Performers</h2>
+          </div>
+
+          <div class="experience-copy">
+            <p>
+              Dr. Gustavo Bianchi brings more than a decade of work with the
+              Texas State Solo-Ensemble Contest and regional NATS
+              competitions, along with collaborative experience at The
+              University of Texas at Austin, Austin Opera, and Spotlight on
+              Opera. His background as a soloist, chamber musician, educator,
+              and prize-winning accompanist supports a partnership grounded
+              in preparation, attentive listening, flexibility, and respect
+              for each performer’s musical intentions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section audio-section" aria-label="Collaborative piano performance samples">
+        <div class="audio-panel">
+          <div>
+            <p class="eyebrow">Performance Samples</p>
+            <h2 id="collaborative-sample-heading">Collaborative Piano</h2>
+          </div>
+
+          <div class="recording-list">
+            <div class="audio-copy recording">
+              <p class="audio-title">
+                Rachmaninov — Sonata for Cello and Piano in G minor, Op. 19:
+                III. Andante · Live
+              </p>
+              <p class="audio-credit">
+                Janelle Ragno, cello<br />
+                Gustavo Bianchi, piano
+              </p>
+
+              <audio
+                controls
+                preload="metadata"
+                aria-label="Live performance of the third movement of Rachmaninov's Cello Sonata, with Janelle Ragno on cello and Gustavo Bianchi at the piano"
+              >
+                <source
+                  src="/audio/rachmaninoff-cello-sonata-movement-3.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support audio playback.
+                <a href="/audio/rachmaninoff-cello-sonata-movement-3.mp3">
+                  Listen to the performance
+                </a>
+              </audio>
+            </div>
+
+            <div class="audio-copy recording">
+              <p class="audio-title">
+                Beethoven — <cite>An die ferne Geliebte</cite>, Op. 98 · Live
+              </p>
+              <p class="audio-credit">
+                Miguel Alvear, tenor<br />
+                Gustavo Bianchi, piano
+              </p>
+
+              <audio
+                controls
+                preload="metadata"
+                aria-label="Live performance of Beethoven's An die ferne Geliebte, Opus 98, with Miguel Alvear, tenor, and Gustavo Bianchi at the piano"
+              >
+                <source
+                  src="/audio/beethoven-an-die-ferne-geliebte-op-98.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support audio playback.
+                <a href="/audio/beethoven-an-die-ferne-geliebte-op-98.mp3">
+                  Listen to the performance
+                </a>
+              </audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Availability &amp; Inquiries</h2>
+          </div>
+
+          <div class="contact-copy">
+            <p>
+              For availability, scheduling, and rates, please get in touch.
+              Details such as the event date, repertoire, location, and
+              rehearsal needs can be discussed as needed.
+            </p>
+            <p>
+              Travel engagements for state UIL, out-of-town competitions,
+              auditions, and other events may be arranged in advance.
+            </p>
+
+            <a
+              class="button button-primary"
+              href="mailto:bianchipianostudio@gmail.com?subject=Accompaniment%20Inquiry"
+            >
+              Inquire About Accompaniment
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <SiteFooter />
+
+    <ExclusiveAudio />
+
+    <script>
+      document.querySelectorAll(".mobile-navigation").forEach((menu) => {
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => menu.removeAttribute("open"));
+        });
+      });
+    </script>
+
+    <style is:global>
+      :root {
+        --background: #0d0c0b;
+        --background-soft: #151310;
+        --panel: #1c1813;
+        --cream: #f2eadc;
+        --cream-muted: #c9bead;
+        --gold: #c6a15b;
+        --gold-light: #dfc485;
+        --border: rgba(223, 196, 133, 0.22);
+        --serif: "Cormorant Garamond", serif;
+        --sans: "Inter", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--cream);
+        font-family: var(--sans);
+        font-weight: 300;
+        line-height: 1.75;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      h1, h2, h3 {
+        margin-top: 0;
+        font-family: var(--serif);
+        font-weight: 500;
+        line-height: 1.05;
+      }
+
+      h1 {
+        max-width: 930px;
+        margin-bottom: 30px;
+        font-size: clamp(3.9rem, 7vw, 7rem);
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin-bottom: 24px;
+        font-size: clamp(2.75rem, 4.4vw, 4.35rem);
+        letter-spacing: -0.025em;
+      }
+
+      h3 { margin-bottom: 12px; font-size: 2rem; }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--gold-light);
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .site-header {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 26px clamp(24px, 5vw, 80px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .brand {
+        font-family: var(--serif);
+        font-size: 1.65rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+
+      .site-header > nav { display: flex; gap: clamp(16px, 2.2vw, 30px); }
+
+      .site-header nav a {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.74rem;
+        font-weight: 400;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .site-header nav a:hover { color: var(--gold-light); }
+
+      .mobile-navigation { display: none; }
+      .mobile-navigation summary {
+        list-style: none;
+        cursor: pointer;
+        color: var(--gold-light);
+        font-size: 0.76rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .mobile-navigation summary::-webkit-details-marker { display: none; }
+      .mobile-navigation nav {
+        position: absolute;
+        top: 80px;
+        right: 24px;
+        display: grid;
+        gap: 18px;
+        min-width: 210px;
+        padding: 24px;
+        border: 1px solid var(--border);
+        background: #151310;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .services-hero {
+        position: relative;
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        padding: 145px clamp(24px, 8vw, 130px) 90px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 78% 26%, rgba(198, 161, 91, 0.18), transparent 28%),
+          linear-gradient(135deg, #18130e, #090909 64%);
+      }
+
+      .services-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.12;
+        background:
+          repeating-linear-gradient(
+            120deg,
+            transparent 0,
+            transparent 23px,
+            rgba(255, 255, 255, 0.024) 24px
+          );
+      }
+
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(13, 12, 11, 0.08),
+            rgba(13, 12, 11, 0.38) 72%,
+            rgba(13, 12, 11, 0.7)
+          );
+      }
+
+      .hero-content { position: relative; z-index: 2; }
+
+      .hero-introduction {
+        max-width: 780px;
+        margin: 0 0 36px;
+        color: var(--cream-muted);
+        font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      }
+
+      .section {
+        padding: clamp(82px, 9vw, 140px) clamp(24px, 7vw, 110px);
+      }
+
+      .section-heading { max-width: 940px; margin-bottom: 58px; }
+
+      .section-introduction {
+        max-width: 720px;
+        margin: 0;
+        color: var(--cream-muted);
+      }
+
+      .services-section { background: var(--background); }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .service-card {
+        min-height: 265px;
+        padding: 34px 29px;
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(145deg, rgba(198, 161, 91, 0.09), transparent 60%),
+          #11100e;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: var(--cream-muted);
+        font-size: 0.92rem;
+      }
+
+      .experience-section { background: var(--background-soft); }
+
+      .experience-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(135deg, rgba(198, 161, 91, 0.08), transparent 55%),
+          var(--panel);
+      }
+
+      .experience-copy, .contact-copy { color: var(--cream-muted); }
+      .experience-copy p, .contact-copy p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .audio-section {
+        display: grid;
+        gap: 24px;
+        background: var(--background);
+      }
+
+      .audio-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        align-items: center;
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(135deg, rgba(198, 161, 91, 0.12), transparent 58%),
+          var(--panel);
+      }
+
+      .audio-copy { color: var(--cream-muted); }
+
+      .recording-list {
+        display: grid;
+        gap: 34px;
+      }
+
+      .recording + .recording {
+        padding-top: 34px;
+        border-top: 1px solid rgba(223, 196, 133, 0.22);
+      }
+
+      .audio-title {
+        margin: 0 0 8px;
+        color: var(--cream);
+        font-family: var(--serif);
+        font-size: clamp(1.4rem, 2.4vw, 2rem);
+        line-height: 1.25;
+      }
+
+      .audio-title cite { font-style: italic; }
+
+      .audio-credit {
+        margin: 0 0 28px;
+        color: var(--gold-light);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      audio {
+        display: block;
+        width: 100%;
+        accent-color: var(--gold);
+      }
+
+      .contact-section { background: var(--background-soft); }
+
+      .contact-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.75fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          radial-gradient(circle at 80% 20%, rgba(198, 161, 91, 0.13), transparent 30%),
+          var(--panel);
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        border: 1px solid var(--gold);
+        font-size: 0.76rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .button-primary { background: var(--gold); color: #14110d; }
+      .button-primary:hover { background: var(--gold-light); }
+
+      @media (max-width: 1000px) {
+        .experience-panel, .audio-panel, .contact-panel {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .site-header > nav { display: none; }
+        .mobile-navigation { display: block; }
+
+        .services-hero {
+          min-height: 760px;
+          padding-top: 125px;
+        }
+
+        h1 { font-size: 4rem; }
+        .services-grid { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 520px) {
+        h1 { font-size: 3.3rem; }
+        h2 { font-size: 2.8rem; }
+
+        .section, .services-hero {
+          padding-right: 22px;
+          padding-left: 22px;
+        }
+
+        .experience-panel, .audio-panel, .contact-panel {
+          padding: 34px 25px;
+        }
+
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </body>
+</html>

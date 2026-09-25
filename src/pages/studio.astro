@@ -1,0 +1,609 @@
+---
+import ExclusiveAudio from "../components/ExclusiveAudio.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about private piano instruction with Dr. Gustavo Bianchi at Bianchi Piano Studio in Pearland, Texas."
+    />
+    <title>Bianchi Piano Studio | Dr. Gustavo Bianchi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Gustavo Bianchi</a>
+
+      <nav aria-label="Main navigation">
+        <a href="/#about">About</a>
+        <a href="/#music">Music</a>
+        <a href="/studio" aria-current="page">Studio</a>
+        <a href="/accompanist">Accompanist</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <details class="mobile-navigation">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="/#about">About</a>
+          <a href="/#music">Music</a>
+          <a href="/studio" aria-current="page">Studio</a>
+          <a href="/accompanist">Accompanist</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
+    </header>
+
+    <main>
+      <section class="studio-hero">
+        <div class="hero-content">
+          <p class="eyebrow">Bianchi Piano Studio</p>
+
+          <h1>
+            Individualized piano instruction grounded in artistry,
+            musicianship, and thoughtful listening.
+          </h1>
+
+          <p class="hero-introduction">
+            Private piano instruction for beginning through advanced students,
+            shaped around each student’s abilities, interests, and goals.
+            Lessons build technique, musicianship, and expressive confidence
+            through attentive, individualized study.
+          </p>
+
+          <a class="button button-primary" href="mailto:bianchipianostudio@gmail.com">
+            Inquire About Lessons
+          </a>
+        </div>
+      </section>
+
+      <figure class="studio-photo">
+        <img
+          src="/images/studio-room-hero.JPG"
+          alt="Bianchi Piano Studio teaching room with multiple pianos"
+          width="2400"
+          height="1673"
+          fetchpriority="high"
+        />
+        <figcaption>The teaching studio in Pearland, Texas.</figcaption>
+      </figure>
+
+      <section class="section approach-section">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching Approach</p>
+          <h2>Helping Students Discover That They Can Become Artists</h2>
+        </div>
+
+        <div class="approach-layout">
+          <div class="approach-copy">
+            <p>
+              I believe one of a teacher’s most important responsibilities is
+              helping students discover that they can become artists.
+              Technical development matters, but it should always serve
+              musical communication, imagination, and a deeper understanding
+              of sound.
+            </p>
+
+            <p>
+              Lessons may incorporate classical repertoire, contemporary
+              music, theory, ear training, sight-reading, and performance
+              preparation. The approach is flexible, but the standards remain
+              thoughtful and consistent.
+            </p>
+          </div>
+
+          <aside class="philosophy-card">
+            <p>
+              Strong foundations help every student become a more perceptive,
+              expressive, and independent musician.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section audio-section" aria-labelledby="solo-sample-heading">
+        <div class="audio-panel">
+          <div>
+            <p class="eyebrow">Performance Sample</p>
+            <h2 id="solo-sample-heading">Solo Piano</h2>
+          </div>
+
+          <div class="audio-copy">
+            <p class="audio-title">
+              Schumann — Fantasie in C major, Op. 17: Movement I · Live
+            </p>
+            <p class="audio-credit">Gustavo Bianchi, piano</p>
+
+            <audio
+              controls
+              preload="metadata"
+              aria-label="Live performance of the first movement of Schumann's Fantasie, Opus 17, with Gustavo Bianchi at the piano"
+            >
+              <source
+                src="/audio/schumann-fantasie-op-17-movement-1.mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support audio playback.
+              <a href="/audio/schumann-fantasie-op-17-movement-1.mp3">
+                Listen to the performance
+              </a>
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section">
+        <div class="experience-panel">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>A Teacher Shaped by Performance, Collaboration, and Pedagogy</h2>
+          </div>
+
+          <div class="experience-copy">
+            <p>
+              Dr. Gustavo Bianchi holds a Doctor of Musical Arts in Piano
+              Performance from The University of Texas at Austin and has
+              taught privately since 1999, alongside university teaching and
+              extensive performance work. His teaching includes adjudication,
+              competition preparation, and ABRSM preparation, offered since
+              2005. He received the Austin District Music Teachers Association
+              Outstanding Pre-College Teaching Achievement Award in 2012.
+              Former students have continued into professional careers in
+              performance, composition, production, and education. This broad
+              experience informs an approach that is exacting, flexible, and
+              attentive to each student’s development.
+            </p>
+
+            <a class="biography-link" href="/bio">Read Full Biography</a>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="section practical-section" id="contact">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Lessons</p>
+            <h2>Begin the Conversation</h2>
+          </div>
+
+          <div class="contact-copy">
+            <p>
+              Private piano instruction is offered in Pearland, Texas. Lesson
+              length and structure are determined according to each student’s
+              age, experience, and musical goals.
+            </p>
+
+            <p>
+              Online lessons are also available for students who live outside
+              the area and, when useful, for make-up lessons.
+            </p>
+
+            <div class="contact-actions">
+              <a
+                class="button button-primary"
+                href="mailto:bianchipianostudio@gmail.com"
+              >
+                Contact Dr. Bianchi About Lessons
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <SiteFooter />
+
+    <ExclusiveAudio />
+
+    <script>
+      document.querySelectorAll(".mobile-navigation").forEach((menu) => {
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => menu.removeAttribute("open"));
+        });
+      });
+    </script>
+
+    <style is:global>
+      :root {
+        --background: #0d0c0b;
+        --background-soft: #151310;
+        --panel: #1c1813;
+        --cream: #f2eadc;
+        --cream-muted: #c9bead;
+        --gold: #c6a15b;
+        --gold-light: #dfc485;
+        --border: rgba(223, 196, 133, 0.22);
+        --serif: "Cormorant Garamond", serif;
+        --sans: "Inter", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--cream);
+        font-family: var(--sans);
+        font-weight: 300;
+        line-height: 1.75;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      h1, h2, h3 {
+        margin-top: 0;
+        font-family: var(--serif);
+        font-weight: 500;
+        line-height: 1.05;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin-bottom: 30px;
+        font-size: clamp(3.8rem, 7vw, 7rem);
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin-bottom: 24px;
+        font-size: clamp(2.75rem, 4.4vw, 4.35rem);
+        letter-spacing: -0.025em;
+      }
+
+      h3 { margin-bottom: 12px; font-size: 2rem; }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--gold-light);
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .site-header {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 26px clamp(24px, 5vw, 80px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .brand {
+        font-family: var(--serif);
+        font-size: 1.65rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+
+      .site-header > nav { display: flex; gap: clamp(16px, 2.2vw, 30px); }
+
+      .site-header nav a {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.74rem;
+        font-weight: 400;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .site-header nav a:hover, .text-link:hover {
+        color: var(--gold-light);
+      }
+
+      .mobile-navigation { display: none; }
+      .mobile-navigation summary {
+        list-style: none;
+        cursor: pointer;
+        color: var(--gold-light);
+        font-size: 0.76rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .mobile-navigation summary::-webkit-details-marker { display: none; }
+      .mobile-navigation nav {
+        position: absolute;
+        top: 80px;
+        right: 24px;
+        display: grid;
+        gap: 18px;
+        min-width: 210px;
+        padding: 24px;
+        border: 1px solid var(--border);
+        background: #151310;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .studio-hero {
+        position: relative;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        padding: 155px clamp(24px, 8vw, 130px) 90px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 82% 25%, rgba(198, 161, 91, 0.18), transparent 30%),
+          linear-gradient(135deg, #1b150f, #090807 65%);
+      }
+
+      .studio-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.14;
+        background:
+          repeating-linear-gradient(
+            120deg,
+            transparent 0,
+            transparent 23px,
+            rgba(255, 255, 255, 0.025) 24px
+          );
+      }
+
+      .hero-content { position: relative; z-index: 2; }
+
+      .hero-introduction {
+        max-width: 760px;
+        margin: 0 0 36px;
+        color: var(--cream-muted);
+        font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      }
+
+      .studio-photo {
+        margin: 0;
+        padding: 0 clamp(24px, 4vw, 70px) 26px;
+        background: #090807;
+      }
+
+      .studio-photo img {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .studio-photo figcaption {
+        max-width: 1600px;
+        margin: 12px auto 0;
+        color: var(--cream-muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+      }
+
+      .section {
+        padding: clamp(82px, 9vw, 140px) clamp(24px, 7vw, 110px);
+      }
+
+      .section-heading { max-width: 920px; margin-bottom: 58px; }
+
+      .section-heading.centered {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .section-introduction {
+        max-width: 720px;
+        margin: 0 auto;
+        color: var(--cream-muted);
+      }
+
+      .approach-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1fr);
+        gap: clamp(48px, 7vw, 100px);
+        align-items: start;
+      }
+
+      .approach-copy {
+        color: var(--cream-muted);
+        font-size: 1.08rem;
+      }
+
+      .approach-copy p { margin: 0 0 28px; }
+
+      .philosophy-card {
+        padding: 36px 44px;
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(135deg, rgba(198, 161, 91, 0.11), transparent 58%),
+          var(--panel);
+      }
+
+      .philosophy-card p {
+        margin: 0;
+        font-family: var(--serif);
+        font-size: clamp(1.6rem, 2.4vw, 2.15rem);
+        line-height: 1.25;
+      }
+
+      .audio-section { background: var(--background); }
+
+      .audio-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        align-items: center;
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(135deg, rgba(198, 161, 91, 0.12), transparent 58%),
+          var(--panel);
+      }
+
+      .audio-copy { color: var(--cream-muted); }
+
+      .audio-title {
+        margin: 0 0 8px;
+        color: var(--cream);
+        font-family: var(--serif);
+        font-size: clamp(1.4rem, 2.4vw, 2rem);
+        line-height: 1.25;
+      }
+
+      .audio-credit {
+        margin: 0 0 28px;
+        color: var(--gold-light);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      audio {
+        display: block;
+        width: 100%;
+        accent-color: var(--gold);
+      }
+
+      .experience-section {
+  background: var(--background-soft);
+}
+
+      .experience-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          linear-gradient(135deg, rgba(198, 161, 91, 0.08), transparent 55%),
+          var(--panel);
+      }
+
+      .experience-copy, .contact-copy { color: var(--cream-muted); }
+      .experience-copy p, .contact-copy p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .contact-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.75fr) minmax(300px, 1fr);
+        gap: clamp(50px, 8vw, 120px);
+        padding: clamp(44px, 6vw, 84px);
+        border: 1px solid var(--border);
+        background:
+          radial-gradient(circle at 80% 20%, rgba(198, 161, 91, 0.13), transparent 30%),
+          var(--panel);
+      }
+      .biography-link {
+        display: inline-block;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        color: var(--gold-light);
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition: border-color 180ms ease, color 180ms ease;
+      }
+
+      .biography-link:hover,
+      .biography-link:focus-visible {
+        border-bottom-color: var(--gold-light);
+      }
+      .contact-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+        margin-top: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        border: 1px solid var(--gold);
+        font-size: 0.76rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .button-primary { background: var(--gold); color: #14110d; }
+      .button-primary:hover { background: var(--gold-light); }
+
+      .text-link {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--gold-light);
+        font-size: 0.74rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .text-link span { transition: transform 180ms ease; }
+      .text-link:hover span { transform: translateX(5px); }
+
+      @media (max-width: 1000px) {
+        .approach-layout, .audio-panel, .experience-panel, .contact-panel {
+          grid-template-columns: 1fr;
+        }
+
+ 
+      }
+
+      @media (max-width: 760px) {
+        .site-header > nav { display: none; }
+        .mobile-navigation { display: block; }
+
+        .studio-hero {
+          padding-top: 125px;
+          padding-bottom: 80px;
+        }
+
+        h1 { font-size: 4rem; }
+      }
+
+      @media (max-width: 520px) {
+        h1 { font-size: 3.35rem; }
+        h2 { font-size: 2.8rem; }
+
+        .section, .studio-hero {
+          padding-right: 22px;
+          padding-left: 22px;
+        }
+
+        .philosophy-card, .audio-panel, .experience-panel, .contact-panel {
+          padding: 34px 25px;
+        }
+
+        .contact-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </body>
+</html>

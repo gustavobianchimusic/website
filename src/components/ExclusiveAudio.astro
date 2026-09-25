@@ -1,0 +1,13 @@
+<script>
+  const audioPlayers = document.querySelectorAll<HTMLAudioElement>("audio");
+
+  audioPlayers.forEach((currentPlayer) => {
+    currentPlayer.addEventListener("play", () => {
+      audioPlayers.forEach((otherPlayer) => {
+        if (otherPlayer !== currentPlayer && !otherPlayer.paused) {
+          otherPlayer.pause();
+        }
+      });
+    });
+  });
+</script>
