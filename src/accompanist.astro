@@ -1,6 +1,27 @@
 ---
 import ExclusiveAudio from "./components/ExclusiveAudio.astro";
 import SiteFooter from "./components/SiteFooter.astro";
+
+const accompanistSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://gustavobianchi.com/accompanist/#service",
+  name: "Collaborative Piano and Accompaniment",
+  serviceType: "Piano accompaniment and collaborative piano",
+  url: "https://gustavobianchi.com/accompanist/",
+  description:
+    "Professional accompaniment for UIL and TSSEC events, auditions, competitions, recitals, singers, instrumentalists, schools, and studios.",
+  provider: {
+    "@type": "Person",
+    "@id": "https://gustavobianchi.com/#person",
+    name: "Dr. Gustavo Bianchi",
+  },
+  areaServed: [
+    { "@type": "State", name: "Texas" },
+    { "@type": "City", name: "Houston, Texas" },
+    { "@type": "City", name: "Austin, Texas" },
+  ],
+};
 ---
 
 <!doctype html>
@@ -12,7 +33,11 @@ import SiteFooter from "./components/SiteFooter.astro";
       name="description"
       content="UIL accompanist for the Texas State Solo-Ensemble Contest (TSSEC) in Austin, with rehearsals in Houston or Austin. Collaborative piano for auditions, recitals, and competitions."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gustavobianchi.com/accompanist/" />
     <title>UIL Accompanist for TSSEC in Austin | Dr. Gustavo Bianchi</title>
+
+    <script type="application/ld+json" set:html={JSON.stringify(accompanistSchema)} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

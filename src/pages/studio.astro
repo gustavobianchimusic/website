@@ -1,6 +1,29 @@
 ---
 import ExclusiveAudio from "../components/ExclusiveAudio.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+
+const studioSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://gustavobianchi.com/studio/#service",
+  name: "Private Piano Lessons in Pearland",
+  serviceType: "Private piano instruction",
+  url: "https://gustavobianchi.com/studio/",
+  description:
+    "Individualized private piano lessons for beginning through advanced students in west Pearland, Texas.",
+  provider: {
+    "@type": "Person",
+    "@id": "https://gustavobianchi.com/#person",
+    name: "Dr. Gustavo Bianchi",
+  },
+  areaServed: [
+    { "@type": "City", name: "Pearland, Texas" },
+    { "@type": "Place", name: "Shadow Creek Ranch" },
+    { "@type": "Place", name: "Southern Trails" },
+    { "@type": "City", name: "Sugar Land, Texas" },
+    { "@type": "City", name: "Houston, Texas" },
+  ],
+};
 ---
 
 <!doctype html>
@@ -10,9 +33,13 @@ import SiteFooter from "../components/SiteFooter.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn about private piano instruction with Dr. Gustavo Bianchi at Bianchi Piano Studio in Pearland, Texas."
+      content="Private piano lessons in west Pearland with Dr. Gustavo Bianchi, serving families in Shadow Creek Ranch, Southern Trails, and nearby communities."
     />
-    <title>Bianchi Piano Studio | Dr. Gustavo Bianchi</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gustavobianchi.com/studio/" />
+    <title>Piano Lessons in Pearland | Bianchi Piano Studio</title>
+
+    <script type="application/ld+json" set:html={JSON.stringify(studioSchema)} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

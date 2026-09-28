@@ -1,5 +1,24 @@
 ---
 import SiteFooter from "../components/SiteFooter.astro";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://gustavobianchi.com/#person",
+  name: "Dr. Gustavo Bianchi",
+  alternateName: "Gustavo Bianchi",
+  url: "https://gustavobianchi.com/",
+  image: "https://gustavobianchi.com/images/about-gustavo.jpg",
+  jobTitle: ["Pianist", "Piano educator", "Collaborative pianist"],
+  alumniOf: [
+    { "@type": "CollegeOrUniversity", name: "The University of Texas at Austin" },
+    { "@type": "CollegeOrUniversity", name: "Florida State University" },
+  ],
+  sameAs: [
+    "https://www.youtube.com/@BianchiPianist",
+    "https://www.instagram.com/bianchipianist/",
+  ],
+};
 ---
 
 <!doctype html>
@@ -11,7 +30,11 @@ import SiteFooter from "../components/SiteFooter.astro";
       name="description"
       content="Biography of pianist and educator Dr. Gustavo Bianchi."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gustavobianchi.com/bio/" />
     <title>Biography | Dr. Gustavo Bianchi</title>
+
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
